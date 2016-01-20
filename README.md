@@ -29,7 +29,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![walkthrough](week-1-first-part.gif)
+![walkthrough](week-1-first-part-revised.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
