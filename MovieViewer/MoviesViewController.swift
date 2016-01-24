@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -14,9 +15,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     var movies: [NSDictionary]?
     
+    let refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -40,14 +46,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                             
                             self.movies = responseDictionary["results"] as? [NSDictionary]
                             self.tableView.reloadData()
+                            self.refreshControl.endRefreshing()
                     }
                 }
         });
         task.resume()
         
+       
         
         
         
+        // Initialize a UIRefreshControl
+        
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.insertSubview(refreshControl, atIndex: 0)
         
     }
 
@@ -55,6 +67,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if let movies = movies {
@@ -71,16 +84,49 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
+        let posterPath = movie["poster_path"] as! String
+        
+        let baseUrl = "http://image.tmdb.org/t/p/w500"
+       
+        let imageUrl = NSURL(string: baseUrl + posterPath)
+        
+    
         
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        
-        
+        cell.posterView.setImageWithURL(imageUrl!)
         
         print("row \(indexPath.row)")
         return cell
     }
     
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        let apiKey = "a07e22bc18f5cb106bfe4cc1f83ad8ed"
+        let url = NSURL(string:"https://api.themoviedb.org/3/movie/now_playing?api_key=\(apiKey)")
+        let request = NSURLRequest(URL: url!)
+        
+        // ... Create the NSURLRequest (myRequest) ...
+        
+        // Configure session so that completion handler is executed on main UI thread
+        let session = NSURLSession(
+            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+            delegate:nil,
+            delegateQueue:NSOperationQueue.mainQueue()
+        )
+        
+        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
+            completionHandler: { (data, response, error) in
+                
+                // ... Use the new data to update the data source ...
+                
+                // Reload the tableView now that there is new data
+                self.tableView.reloadData()
+                
+                // Tell the refreshControl to stop spinning
+                refreshControl.endRefreshing()	
+        });
+        task.resume()
+    }
     
     
     /*
