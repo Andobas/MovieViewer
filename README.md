@@ -57,6 +57,10 @@ I had trouble trying to implement the optional user stories; would need to devot
     
     
     
+   
+   
+   
+   
     # Project 2 - *Movie Viewer - Part 2*
 
 **Movie Viewer** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
