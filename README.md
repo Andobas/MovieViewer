@@ -2,7 +2,7 @@
 
 **Movie Viewer** is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **14** hours spent in total
 
 ## User Stories
 
@@ -36,7 +36,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
-
+I had trouble trying to implement the optional user stories; would need to devote them more time and research in the future.
 ## License
 
     Copyright [2016] [Juan Hernandez]
