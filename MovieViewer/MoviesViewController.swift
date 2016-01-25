@@ -12,17 +12,15 @@ import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    
     @IBOutlet weak var tableView: UITableView!
     
     var movies: [NSDictionary]?
-    
     let refreshControl = UIRefreshControl()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -62,8 +60,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         task.resume()
         
        
-        
-        
         
         // Initialize a UIRefreshControl
         
