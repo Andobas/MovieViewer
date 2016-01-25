@@ -23,13 +23,13 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] Added styling to UI with fonts and colors.
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-![walkthrough](week-1-first-part-revised.gif)
+![walkthrough](movieViewerWeek1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
