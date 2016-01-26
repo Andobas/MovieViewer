@@ -14,6 +14,7 @@
 		678B16EF1C4D1EC300142BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678B16ED1C4D1EC300142BA4 /* LaunchScreen.storyboard */; };
 		678B16F71C4D20D500142BA4 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678B16F61C4D20D500142BA4 /* MoviesViewController.swift */; };
 		678B16FA1C4DD00000142BA4 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678B16F91C4DD00000142BA4 /* MovieCell.swift */; };
+		679E2CE71C56F2D3000816C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679E2CE61C56F2D2000816C0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		678B16F01C4D1EC300142BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678B16F61C4D20D500142BA4 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		678B16F91C4DD00000142BA4 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		679E2CE61C56F2D2000816C0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				678B16F61C4D20D500142BA4 /* MoviesViewController.swift */,
+				679E2CE61C56F2D2000816C0 /* DetailViewController.swift */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				678B16E51C4D1EC300142BA4 /* AppDelegate.swift in Sources */,
 				678B16F71C4D20D500142BA4 /* MoviesViewController.swift in Sources */,
 				678B16FA1C4DD00000142BA4 /* MovieCell.swift in Sources */,
+				679E2CE71C56F2D3000816C0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
