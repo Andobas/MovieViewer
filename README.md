@@ -90,7 +90,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-![walkthrough] (movie_viewer_week2_first_part.gif
+![walkthrough] (movie_viewer_week2_first_part.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
