@@ -19,9 +19,14 @@
                                 <color key="backgroundColor" red="0.098060979813260257" green="0.60131731290951707" blue="0.63086487880119912" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.067236699163913727" green="0.84464186429977417" blue="0.84728223085403442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="MO2-rw-yFZ">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="138" id="CcW-OF-jUN" customClass="MovieCell" customModule="MovieViewer" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="320" height="138"/>
+                                        <rect key="frame" x="0.0" y="136" width="320" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CcW-OF-jUN" id="vnh-1V-6Yv">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="137.5"/>
@@ -62,6 +67,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="bAy-2S-uf8"/>
                     <connections>
+                        <outlet property="searchBar" destination="MO2-rw-yFZ" id="xKJ-be-5tq"/>
                         <outlet property="tableView" destination="LIi-SV-BoL" id="jY9-fa-3Pm"/>
                     </connections>
                 </viewController>

@@ -10,15 +10,18 @@ import UIKit
 import AFNetworking
 import MBProgressHUD
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     var movies: [NSDictionary]?
     let refreshControl = UIRefreshControl()
     var endpoint: String!
     
+    var filteredMovies: [String]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
