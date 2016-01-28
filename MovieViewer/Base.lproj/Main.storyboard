@@ -16,7 +16,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" id="LIi-SV-BoL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.098039215686274508" green="0.59999999999999998" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.59999999999999998" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.14117647058823529" green="0.76078431372549016" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.067236699163913727" green="0.84464186429977417" blue="0.84728223085403442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -111,7 +111,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.030832654248558123" green="0.21630983248856719" blue="0.22693859677179473" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.59999999999999998" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                             </scrollView>
