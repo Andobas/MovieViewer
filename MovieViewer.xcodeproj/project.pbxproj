@@ -82,8 +82,8 @@
 		678B16E31C4D1EC300142BA4 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
-				678B16FB1C4DD09800142BA4 /* view controllers */,
 				678B16F81C4DCEB200142BA4 /* Views */,
+				678B16FB1C4DD09800142BA4 /* view controllers */,
 				678B16E41C4D1EC300142BA4 /* AppDelegate.swift */,
 				678B16E81C4D1EC300142BA4 /* Main.storyboard */,
 				678B16EB1C4D1EC300142BA4 /* Assets.xcassets */,
