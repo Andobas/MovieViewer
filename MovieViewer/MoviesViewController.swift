@@ -21,14 +21,16 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     let refreshControl = UIRefreshControl()
     var endpoint: String!
     
-    var filteredMovies: [String]!
+    var filteredMovies: [NSDictionary]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         
+        tableView.insertSubview(refreshControl, atIndex: 0)
         
         // Do any additional setup after loading the view.
         
@@ -57,6 +59,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                             
                             
                             self.movies = responseDictionary["results"] as? [NSDictionary]
+                            
+                            self.filteredMovies = self.movies
                             self.tableView.reloadData()
                             self.refreshControl.endRefreshing()
                     }
@@ -80,18 +84,21 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if let movies = movies {
-            return movies.count
-        } else {
-            return 0
-        }
-        
+//        if let movies = movies {
+//            return movies.count
+//        } else {
+//            return 0
+//        }
+        return filteredMovies?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("MovieCell", forIndexPath: indexPath) as! MovieCell
-        let movie = movies![indexPath.row]
+        //let movie = movies![indexPath.row]
+        
+        let movie = filteredMovies![indexPath.row]
+        
         let title = movie["title"] as? String
         let overview = movie["overview"] as? String
         cell.titleLabel.text = title
@@ -136,6 +143,14 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         task.resume()
     }
     
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredMovies = searchText.isEmpty ? movies : movies!.filter({(movie: NSDictionary) -> Bool in
+            return (movie["title"] as! String).rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil
+        })
+        
+        self.tableView.reloadData()
+        
+    }
     
     
     // MARK: - Navigation
