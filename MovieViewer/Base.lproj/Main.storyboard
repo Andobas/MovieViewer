@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Movies-->
+        <!-- FLICKS -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MoviesViewController" customModule="MovieViewer" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                             </tableView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="Movies" id="bAy-2S-uf8"/>
+                    <navigationItem key="navigationItem" title=" FLICKS " id="bAy-2S-uf8"/>
                     <connections>
                         <outlet property="searchBar" destination="MO2-rw-yFZ" id="xKJ-be-5tq"/>
                         <outlet property="tableView" destination="LIi-SV-BoL" id="jY9-fa-3Pm"/>
@@ -136,9 +136,18 @@
             <objects>
                 <navigationController storyboardIdentifier="MoviesNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="a5R-7U-Y7M" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="L44-21-LRq">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="L44-21-LRq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.038409652760000003" green="0.26946708800000002" blue="0.28270782750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.2310147437" green="1" blue="0.27563833929999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.45296496752166737" blue="0.30763648512378938" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
+                            <color key="textColor" red="0.0" green="1" blue="0.78033242449999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="0.17440626765190148" blue="0.78917960869579951" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="3" vertical="5"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
