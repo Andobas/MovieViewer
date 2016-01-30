@@ -34,7 +34,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aFb-pD-CfY">
-                                                    <rect key="frame" x="103" y="0.0" width="217" height="29"/>
+                                                    <rect key="frame" x="103" y="0.0" width="217" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
                                                     <color key="textColor" red="0.070924551033538702" green="0.43491468806468442" blue="0.45628555187812214" alpha="1" colorSpace="calibratedRGB"/>
