@@ -26,10 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.image = UIImage(named: "Icon-Small")
         UITabBar.appearance().tintColor = UIColor(
-            red: 0x24/255,
-            green: 0xC2/255,
-            blue: 0xBB/255,
+            red: 0x21/255,
+            green: 0xDD/255,
+            blue: 0xD3/255,
             alpha: 1.0)
+        
+//        UITabBar.appearance().barTintColor = UIColor(
+//            red: 0x19/255,
+//            green: 0x99/255,
+//            blue: 0xA1/255,
+//            alpha: 0.5)
+        
         
         let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController
         let topRatedViewController = topRatedNavigationController.topViewController as! MoviesViewController
