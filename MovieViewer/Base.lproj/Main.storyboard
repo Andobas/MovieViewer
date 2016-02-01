@@ -65,6 +65,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="0.76378130912780762" green="0.2221110724154228" blue="0.23063068305260595" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title=" FLICKS " id="bAy-2S-uf8"/>
                     <connections>
@@ -145,7 +146,7 @@
                         <color key="barTintColor" red="0.098039215686274508" green="0.59999999999999998" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
-                            <color key="textColor" red="0.0" green="1" blue="0.78033242449999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.0" green="1" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                             <offsetWrapper key="textShadowOffset" horizontal="3" vertical="3"/>
                         </textAttributes>
                     </navigationBar>

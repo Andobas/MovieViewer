@@ -75,6 +75,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
         
+//Trying to change unselected tab bar item color
+        //        self.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Icon-Small")?.imageWithRenderingMode(.AlwaysOriginal), selectedImage: UIImage(named: "Icon-Small"))
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

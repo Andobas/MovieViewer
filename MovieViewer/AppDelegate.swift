@@ -25,17 +25,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nowPlayingViewController.endpoint = "now_playing"
         nowPlayingNavigationController.tabBarItem.title = "Now Playing"
         nowPlayingNavigationController.tabBarItem.image = UIImage(named: "Icon-Small")
+       
+//For changing non-selected icon color?
+        
+//        self.tabBarItem.selectedImage = [[UIImage imageNamed:@"selectedImage"]
+//        imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        
+//        self.tabBarItem.image = [[UIImage imageNamed:@"notSelectedImage"]
+//        imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        
+    
         UITabBar.appearance().tintColor = UIColor(
-            red: 0x21/255,
-            green: 0xDD/255,
-            blue: 0xD3/255,
+            red: 0x00/255,
+            green: 0xFF/255,
+            blue: 0xC7/255,
             alpha: 1.0)
         
-//        UITabBar.appearance().barTintColor = UIColor(
-//            red: 0x19/255,
-//            green: 0x99/255,
-//            blue: 0xA1/255,
-//            alpha: 0.5)
+        UITabBar.appearance().barTintColor = UIColor(
+            red: 0x19/255,
+            green: 0x99/255,
+            blue: 0xA1/255,
+            alpha: 0.5)
+        
+//Another possibility to change tab bar item color (unselected)
+//        var firstViewController:UIViewController = UIViewController()
+//        // The following statement is what you need
+//        var customTabBarItem:UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Icon-Small")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal), selectedImage: UIImage(named: "Icon-Small"))
+//        firstViewController.tabBarItem = customTabBarItem
+
+        
+        
+//Another one
+//        custom.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Icon-Small_normal"), selectedImage: UIImage(named: "Icon-Small_selected"))
+
+        
+      
         
         
         let topRatedNavigationController = storyboard.instantiateViewControllerWithIdentifier("MoviesNavigationController") as! UINavigationController

@@ -62,6 +62,8 @@ class DetailViewController: UIViewController {
                         
                         self.posterImageView.alpha = 1.0
                         
+                    
+                        
                         }, completion: { (sucess) -> Void in
                             
                             // The AFNetworking ImageView Category only allows one request to be sent at a time
@@ -85,6 +87,11 @@ class DetailViewController: UIViewController {
                     // possibly try to get the large image
             })
         // Do any additional setup after loading the view.
+        
+//Trying to change color of unselected tab bar item
+        //        self.tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "Icon-Small")?.imageWithRenderingMode(.AlwaysOriginal), selectedImage: UIImage(named: "Icon-Small"))
+        
+        
     }
   
     override func didReceiveMemoryWarning() {
