@@ -113,12 +113,23 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor(
-            red: 0x24/255,
-            green: 0xC2/255,
-            blue: 0xBB/255,
+            red: 0x19/255,
+            green: 0x99/255,
+            blue: 0xA1/255,
             alpha: 1.0)
         
         cell.selectedBackgroundView = backgroundView
+        
+        
+//        let sTitle = UILabel()
+//        sTitle.tintColor = UIColor(
+//            red: 0x19/255,
+//            green: 0x99/255,
+//            blue: 0xA1/255,
+//            alpha: 1.0)
+//        
+//        cell.selectedBackgroundView = sTitle
+        
         
         
         print("row \(indexPath.row)")
