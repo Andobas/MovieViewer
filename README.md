@@ -74,23 +74,23 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
-- [ ] Customize the navigation bar.
+- [x] For the large poster, load the low resolution image first and then switch to the high resolution image when complete.
+- [x] Customize the navigation bar.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] User can search for a movie (from previous week).
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
+1. I would like to keep working on some optional features from the previous week that I haven't been able to implment. 
 2. 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-![walkthrough] (movie_viewer_week2_first_part.gif)
+![walkthrough] ()
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
