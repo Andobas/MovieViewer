@@ -94,15 +94,17 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+
 tickets by Arthur Lacôte from the Noun Project
 
 movie star by Studio Fibonacci from the Noun Project
 
-movie film projector by Noe Araujo from the Noun Project
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+It was a bit tricky to implement loading low resolution images first. 
 
 ## License
 
